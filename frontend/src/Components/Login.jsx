@@ -1,6 +1,8 @@
+import axios from "axios";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { json, Link } from "react-router-dom";
+import toast from "react-hot-toast";
 
 const Login = () => {
   const [login, setLogin] = useState(true);
@@ -17,7 +19,56 @@ const Login = () => {
     document.getElementById("my_modal_3").close();
   };
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = async (data) => {
+    let userInfo = {
+      email: data.email,
+      password: data.password,
+    };
+
+    if (!login) {
+      userInfo = { ...userInfo, fullname: data.fullname };
+      try {
+        const res = await axios.post(
+          "http://localhost:4001/user/signup",
+          userInfo
+        );
+
+        // console.log(res.ok);
+        
+
+        if (res.status) {
+          document.getElementById("my_modal_3").close();
+        }
+        setTimeout(() => {
+          toast.success(res.data.message);
+          window.location.reload();
+        }, 1000);
+      } catch (err) {
+        console.log("Error: ", err);
+        toast.error(err.message);
+      }
+    } else {
+      try {
+        const res = await axios.post(
+          "http://localhost:4001/user/login",
+          userInfo
+        );
+        if (res.data) {
+          document.getElementById("my_modal_3").close();
+        }
+
+        setTimeout(() => {
+          toast.success(res.data.message);
+          window.location.reload();
+        }, 1000);
+
+        localStorage.setItem("User", JSON.stringify(res.data.user));
+      } catch (err) {
+        console.log("Error: ", err);
+        toast.error(err.message);
+      }
+    }
+  };
   return (
     <>
       <div>
@@ -44,10 +95,10 @@ const Login = () => {
                     type="text"
                     placeholder="Enter your Name"
                     className="w-80 px-3 py-1 border rounded-md outline-none"
-                    {...register("name", { required: true })}
+                    {...register("fullname", { required: true })}
                   />
                   <br />
-                  {errors.name && (
+                  {errors.fullname && (
                     <span className="text-sm text-error">
                       This field is required
                     </span>

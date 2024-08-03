@@ -25,3 +25,7 @@ body {
   color: #77E4C8; /* Change this to the desired color for the active dot */
   opacity: 1; /* Set opacity to 1 for full color */
 }
+
+.react-hot-toast{
+  z-index: 9999;
+}

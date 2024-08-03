@@ -6,7 +6,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="max-w-screen-sm container mx-auto md:px-20 px-4 mt-36 space-y-5 mb-32">
+    <div className="max-w-screen-sm container mx-auto md:px-20 px-4 mt-36 space-y-5 mb-16">
       <div className="text-center">
         <h1 className="text-4xl">
           <span className="font-semibold">Get in </span>

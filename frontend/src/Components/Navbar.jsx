@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Login from "./Login";
+import Logout from "./Logout";
+import { useAuth } from "../context/Authprovider";
 
 const Navbar = ({ clicked, setClicked }) => {
   const [sticky, setSticky] = useState(false);
+  const [authUser, setAuthUser] = useAuth();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -128,17 +131,21 @@ const Navbar = ({ clicked, setClicked }) => {
                 </svg>
               </label>
             </div>
-            <div className="">
-              <a
-                className="btn btn-accent text-black px-6"
-                onClick={() =>
-                  document.getElementById("my_modal_3").showModal()
-                }
-              >
-                Login
-              </a>
-              <Login />
-            </div>
+            {authUser ? (
+              <Logout />
+            ) : (
+              <div className="">
+                <a
+                  className="btn btn-accent text-black px-6"
+                  onClick={() =>
+                    document.getElementById("my_modal_3").showModal()
+                  }
+                >
+                  Login
+                </a>
+                <Login />
+              </div>
+            )}
           </div>
         </div>
       </div>
