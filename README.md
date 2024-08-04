@@ -94,5 +94,4 @@ cd frontend
 npm run dev
 ```
 
-> **_Happy Coding!_** 🎉
-
+# 🚀 **_Happy Coding!_** 🎉
