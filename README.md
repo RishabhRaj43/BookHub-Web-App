@@ -1,11 +1,11 @@
 # Book-Store-App
 
-Technologies used are
+## **Technologies used are**
 
-<li>**MongoDB** for Database Management System</li>
-<li>**Express JS** for Server Side Rendering </li>
-<li>**React JS** for Frontend</li>
-<li>**Node JS** for backend</li>
+-**MongoDB** for Database Management System
+-**Express JS** for Server Side Rendering
+-**React JS** for Frontend
+-**Node JS** for backend
 
 
 
@@ -26,19 +26,19 @@ Technologies used are
 4. **Axios** for handling API requests from the frontend to the backend.
 
 
-# **Clone the Repository**
+## **Clone the Repository**
 
 ### To clone the above project follow these commands-
 
 1) ***Open your terminal and run the following command:***
 
-```
+```bash
 git clone https://github.com/your-username/book-store-app.git
 ```
 
 2) ***Navigate to Project Directories***
 
-```
+```bash
 cd book-store-app
 ```
 
@@ -46,14 +46,14 @@ cd book-store-app
 
 -For Backend
 
-```
+```bash
 cd backend
 npm install mongoose express cors dotenv
 ```
 
 -For Frontend
 
-```
+```bash
 cd ../frontend
 npm install react-router-dom daisyui react-toastify axios
 ```
