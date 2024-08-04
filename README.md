@@ -44,14 +44,14 @@ cd book-store-app
 
 3) ***Install Dependencies***
 
--For Backend
+- For Backend
 
 ```bash
 cd backend
 npm install mongoose express cors dotenv
 ```
 
--For Frontend
+- For Frontend
 
 ```bash
 cd ../frontend
@@ -65,3 +65,18 @@ PORT = 5000
 MongoDBUrl = #write your actual MongoDB url
 ```
 
+5. ***Run Server***
+
+- Backend
+
+```bash
+cd backend
+npm run server
+```
+
+- Frontend
+
+```bash
+cd frontend
+npm run dev
+```
