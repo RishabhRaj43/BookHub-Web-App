@@ -31,7 +31,6 @@
 ### Installation Steps
 
 ```mathematica
-
 1. Clone the Repository
 2. Navigate to the Project Directory
 3. Install Backend Dependencies
@@ -94,3 +93,5 @@ npm run server
 cd frontend
 npm run dev
 ```
+
+![Happy Coding](https://img.shields.io/badge/Happy_Coding-%F0%9F%8E%89-green)
