@@ -28,6 +28,21 @@
 
 ## **Clone the Repository**
 
+### Installation Steps
+
+```markdown
+## Installation Steps
+
+1. **Clone the Repository**
+2. **Navigate to the Project Directory**
+3. **Install Backend Dependencies**
+4. **Install Frontend Dependencies**
+5. **Set Up Environment Variables**
+6. **Run the Backend Server**
+7. **Run the Frontend Application**
+8. **Access the Application**
+```
+
 ### To clone the above project follow these commands-
 
 1) ***Open your terminal and run the following command:***
