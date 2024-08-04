@@ -11,14 +11,14 @@ Technologies used are
 
 Libraries used are
 
--For backend
+<h1>For Backend</h1>
 <ul>1) Mongoose for creating model and connecting with database. </ul>
 <ul>2) Express for creating server, middlewares which includes parsing JSON payloads and defining routes. </ul>
 <ul>3) Cors (Cross-Origin Resource Sharing) for allowing secure cross-origin requests from the frontend.</ul>
 <ul>4) dotenv for bringing environment variables from '.env' file to ensure sensitive information is securely managed.</ul>
 
 
--frontend
+<h1>For Frontend</h1>
 <ul>1) React-router-dom for defining routes. </ul>
 <ul>2) Daisy UI for building components. </ul>
 <ul>3) Toast for beautiful React notifications. </ul>
