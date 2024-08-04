@@ -1,4 +1,12 @@
 # Book-Store-App
-<h1>This Project is made using MongoDB, Express JS, React JS and Node JS.</h1>
+
+Technologies used are
+
+<li>MongoDB for Database Management System</li>
+<li>Express JS for Server Side Rendering </li>
+<li>React JS for Frontend</li>
+<li>Node JS for backend</li>
+
+
 
 
