@@ -2,10 +2,10 @@
 
 ## **Technologies used are**
 
--**MongoDB** for Database Management System
--**Express JS** for Server Side Rendering
--**React JS** for Frontend
--**Node JS** for backend
+- **MongoDB** for Database Management System
+- **Express JS** for Server Side Rendering
+- **React JS** for Frontend
+- **Node JS** for backend
 
 
 
