@@ -8,7 +8,6 @@
 - **Node JS** for backend
 
 
-
 ## Libraries Used
 
 ### For Backend
@@ -74,8 +73,8 @@ npm install react-router-dom daisyui react-toastify axios
 4) ***Setup environment variables***
 
 ```env
-PORT = 5000
-MongoDBUrl = #write your actual MongoDB url
+PORT=5000
+MONGO_URI=your_mongodb_connection_string_here  # Replace with your actual MongoDB URI
 ```
 
 5. ***Run Server***
