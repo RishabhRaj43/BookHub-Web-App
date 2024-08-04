@@ -94,4 +94,4 @@ cd frontend
 npm run dev
 ```
 
-![Happy Coding](https://img.shields.io/badge/Happy_Coding-%F0%9F%8E%89-green)
+> **_Happy Coding!_** 🎉
